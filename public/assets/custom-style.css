@@ -1,0 +1,729 @@
+ .endtask .pull-right {
+	position: absolute !important;
+	right: 0 !important;
+}
+
+
+.datetimepicker-widget {
+    z-index: 1050 !important; /* Ensures it is above other elements */
+}
+.datetimepicker-container {
+    position: relative;
+}
+
+/* Plan Screen */
+.plans_data input[type="radio"]:not(:checked) + div {
+	background: #fff;
+	color: #000;
+	border: 1px solid #19198a;
+	padding: 20px 24px;
+}
+.plans_data #freeplan {
+	position: absolute;
+	margin-top: 38px;
+	border: 1px solid #0034ff;
+}
+.plan_text li {
+	line-height: 25px;
+}
+.plans_data input[type="radio"]:checked + div {
+	background-color: #286fac;
+	color: white;
+	padding: 20px 22px;
+}
+
+/* todolist */
+
+.noti-title{color:#337a22;}
+.text-muted {
+	color: #034078 !important;
+}
+.paginate_button.page-item.active {
+	z-index: 0;
+}
+.activeclock{background-color: #034078 !important}
+.activeclock .fa-clock{color: #fff !important;}
+.todlist .form-check-input:checked {
+	background-color: #286fac !important;
+	border-color: #286fac !important;
+	height: 18px;
+	width: 18px;
+}
+.todlist .form-check-input {
+	height: 18px;
+	width: 18px;
+}
+.bell.mx-2.d-flex.align-items-center {
+	background: unset !important;
+}
+#notificationDropdown {
+	color: #000;
+	background: unset;
+	border: 0;
+}
+.page-link {
+	padding: 12px 16px !important;
+	line-height: 16px;
+}
+
+/* Section Card Styling */
+.fc-event .fc-title {
+	font-weight: 600 !important;
+	text-transform: capitalize;
+}
+.fc-event .fc-content {
+	color: #2c304d;
+	position: relative;
+	z-index: 2;
+	padding: 2px 5px;
+	cursor: pointer;
+	background: #8cdf27;
+}
+.job_list .jobs-table-body td a {
+	display: block;
+	margin: 0;
+	width: 100%;
+	padding: 10px;
+}
+.job_list .jobs-table-body td {
+	 padding-left: 0px !important; 
+	vertical-align: middle;
+}
+.generaltaskcompleted {
+	text-decoration: line-through;
+}
+.job_list  > :not(caption) > * > * {
+	padding: 0 !important;
+}
+.job_list th {
+	padding: 10px !important;
+}
+
+.todlist .btn-danger{
+	position: relative !important;
+	top: 0 !important;
+	left: 2px;
+}
+.todlist .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.list-group.taskList label {
+	text-transform: capitalize;
+	color: #277511;
+	font-weight: 600;
+	font-size: 16px;
+}
+.todlist .card-header {
+    border-radius: 10px 10px 0 0;
+}
+.todlist .taskList::-webkit-scrollbar {
+    width: 5px !important; /* Width of the scrollbar */
+}
+
+.todlist .taskList::-webkit-scrollbar-thumb {
+    background-color: #888; /* Scrollbar thumb color */
+    border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+.todlist .taskList::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Scrollbar track (background) color */
+}
+
+/* For Firefox */
+.todlist .taskList {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: #888 #f1f1f1; /* Thumb color and track color */
+}
+.todlist .card-body {
+    padding: 20px;
+    background-color: #fff;
+}
+.form-control.newTaskDescription {
+	height: 30px;
+}
+.todlist .card-body .input-group.mb-2.mt-2 {
+	background-color: #ccc;
+	padding: 10px 10px;
+}
+.back_btn {
+	color: #fff;
+	padding: 5px 15px;
+	border-radius: 5px;
+	font-size: 14px;
+	border: 1px solid #286fac;
+	background-color: #286fac;
+	font-weight: 600;
+	
+}
+.back_btn:hover {
+	color: #fff;
+	background-color: #4a88be;
+	
+}
+.section-name {
+	color: #000;
+}
+.todlist .card-body {
+	padding: 4px 20px 10px 20px;
+	background-color: #fff;
+}
+/* Add Section and Task Inputs */
+.todlist .input-group .form-control {
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+.todlist .input-group .btn {
+    border-radius:5px;
+	z-index: 1;
+
+}
+
+/* Task List Styling */
+.todlist .taskList {
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+	text-align: initial;
+}
+
+.todlist .taskList .list-group-item {
+    background-color: #f9f9f9;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Task Action Buttons */
+.todlist .edit-task-btn, .delete-task-btn {
+    margin-left: 5px;
+}
+
+/* Hover Effects for Task Items */
+.todlist .list-group-item:hover {
+    background-color: #e2e6ea;
+    transition: background-color 0.2s ease;
+}
+
+
+/* Custom Scrollbar for Task List */
+.todlist .taskList {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.todlist .taskList::-webkit-scrollbar {
+    width: 8px;
+}
+
+.todlist .taskList::-webkit-scrollbar-thumb {
+    background-color: #b3b3b3;
+    border-radius: 10px;
+}
+
+.todlist .taskList::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+/* Empty Task List Message */
+/* .todlist .taskList::before {
+    content: "No tasks yet!";
+    color: #777;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+} */
+.showAddTaskbtn {
+	border: 0;
+	background: #db9616;
+	padding: 4px 18px;
+	font-size: 14px;
+	font-weight: 600;
+}
+.showAddTaskbtn:hover {
+	border: 0;
+	background: #ecbf6c;
+	padding: 4px 18px;
+	font-size: 14px;
+	font-weight: 600;
+	color:#000
+}
+.todlist  .delete-section-btn {
+	margin-top: 0;
+	top: 5px;
+}
+.btn.btn-success.addTaskBtn {
+	background: linear-gradient(to bottom, #4a90e2, #007aff) !important;
+	border: 0;
+}
+.todlist .card-header {
+	border-radius: 5px 5px 0 0;
+	background: #F9DAC4 !important;
+	text-transform: capitalize;
+	padding: 4px 14px !important;
+	border:0px;
+}
+.todlist .card-header h4{
+	
+	font-size: 20px; 
+}
+
+/* endtodolist */
+
+.color_black {
+	color: #000 !important;
+	font-weight: 700;
+}
+#add_changeorder .btn-danger {
+	position: unset !important;
+	top: 0 !important;
+	right: 0 !important;
+}
+.remove-item-btn, .add-item-btn {
+	font-size: 14px;
+}
+.copyright {
+	font-size: 13px;
+	color: #777;
+}
+#add_changeorder .input-group-text {
+	padding: 5px;
+	width: 20px;
+}
+#add_changeorder #cost {
+	padding: 5px;
+	font-size: 14px;
+}
+
+.add_item {
+	padding: 7px 9px;
+	background: #ffeaea;
+}
+a:hover {
+	color: #000;
+}
+#changeOrderContainer tr:hover{background: #ceddeb;}
+.n-link:hover {
+	text-decoration: none;
+	background: #ceddeb;
+}
+.n-link {
+	text-decoration: none;
+}
+.nav-item svg:hover {
+	fill: #ffffff;
+	stroke: #ffffff;
+	stroke-width: 0.4;
+} 
+#updateclockout input[type="radio"]:checked {
+	background-color: #286fac;
+	color: white;
+}
+#updateclockout input[type="radio"]:checked + label {
+	background-color:unset !important;
+	color: #000;
+	padding: 4px;
+}
+.dd1.activenavitem:hover{color:#fff;}
+.job_list a{color:#495057}
+.notownjob{background-color:#FFBC6B !important;border: 1px solid #fff;}
+.jobs-table tr:hover{background: #fff8e1;}
+.text-034078 {
+	line-height: 28px;
+}
+.status-badge {
+	line-height: 30px;
+}
+
+.card {
+
+	background-color: #fff !important;
+
+}
+.contact-img {
+	border-radius: 50%;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-container .image {
+    width: 100%; /* Adjust based on your layout */
+    height: auto; /* Maintain aspect ratio */
+    /* Optional: Rounded corners */
+}
+.modal-header {
+	background: linear-gradient(to bottom, #286fac00, #286fac1f);
+	padding: 10px 12px;
+}
+.modal-header .btn-close {
+	font-size: 12px;
+	color: #d51111;
+}
+.bl_color {
+	color: #034078;
+	padding: 0;
+	margin: 0;
+}
+.blck_color {
+	padding: 0;
+	margin: 0;
+	color: #777;
+}
+.image-container .icon {
+    position: absolute;
+    cursor: pointer;
+   
+}
+.image-container .fa-trash-can{color:#ea1414; font-size:14px;}
+.image-container .delete-icon {
+    top: 10px; /* Adjust the position */
+    right: 10px; /* Adjust the position */
+	background: #fff;
+  padding: 4px;
+  border-radius: 4px;
+}
+.image-container .fa-circle-down {
+	background: #fff;
+	padding: 4px;
+	border-radius: 50%;
+}
+
+.image-container .download-icon {
+    bottom: 10px; /* Adjust the position */
+    right: 10px; /* Adjust the position */
+}
+
+.bg-white12{background-color: #fff;}
+
+#stagesTable tr[draggable="true"] {
+    cursor: move;
+}
+
+#stagesTable tr[draggable="true"]:hover {
+    background-color: #f0f0f0;
+}
+
+#stagesTable tr[draggable="true"]:active {
+    background-color: #e0e0e0;
+}
+
+.bg-white1 {
+	background: #fff;
+	
+}
+table.dataTable thead > tr > th.sorting, table.dataTable thead > tr > th.sorting_asc, table.dataTable thead > tr > th.sorting_desc, table.dataTable thead > tr > th.sorting_asc_disabled, table.dataTable thead > tr > th.sorting_desc_disabled, table.dataTable thead > tr > td.sorting, table.dataTable thead > tr > td.sorting_asc, table.dataTable thead > tr > td.sorting_desc, table.dataTable thead > tr > td.sorting_asc_disabled, table.dataTable thead > tr > td.sorting_desc_disabled{
+	padding-right: 0px !important;
+}
+table.dataTable > thead > tr > th, table.dataTable > thead > tr > td{
+	padding:10px 8px !important;
+}
+table.dataTable {
+	border-collapse: collapse !important;
+	border-spacing: inherit;
+}
+.type_name_task{background-color:#fbe2ca !important}
+.type_name_task span{color:red; font-size:12px;}
+.job_ttle {
+	background: linear-gradient(to bottom, #4a90e2, #007aff);
+	padding: 8px 9px;
+	/* border: 1px solid #ccc; */
+}
+.bg-white2 {
+	background: #fff;
+	padding: 10px 3px 10px 5px;
+	
+}
+.bg-white2:hover{
+	background-color:#fff8e1;;
+}
+.doc-info h4 {
+	font-size: 14px;
+	font-weight: 600;
+	color: #286fac;
+	padding: 0;
+	margin: 0;
+}
+.doc-info span {
+	font-size: 12px;
+	color: #777;
+}
+.doc-info {
+	padding-left: 7px;
+}
+.document_info select{
+	border: 0;
+  background: #fff;
+  width: 50px;
+}
+.document_info select option {
+	font-size: 14px;
+}
+#docmentselect .fa-trash-can {
+	color: #ec1515;
+}
+.downloaddoc{background: rgb(0, 128, 0);
+	border: 1px solid green;
+	padding: 2px;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 2px;
+	cursor: pointer;
+}
+.bg-white12 .zoom-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 16px;
+	color: white;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 6px;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.bg-white12 .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.bg-white12 .gallery-image {
+    display: block;
+    width: 100%;
+    height: 160px;
+}
+
+.bg-white12 .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.bg-white12 .close {
+    position: absolute;
+    top: 50px;
+    right: 80px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#docmentselect .fa-circle-down {
+	color: rgb(43, 196, 43);
+	font-size: 18px;
+	padding: 4px 0px;
+}
+.docdelete{background: rgb(224, 16, 16);
+	border: 1px solid rgb(211, 23, 23);
+	padding: 2px;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 2px;
+}
+.btn-custom-active {
+  background-color: #286fac;
+  color: #ffff !important;
+  border-radius: 20px;
+  padding: 5px 15px;
+  font-weight: 600;
+}
+.bg-complete {
+	background: #198754;
+	color: #fff;
+}
+.general_submit {
+	background: #286fac;
+	color: #fff;
+	border: 1px solid #ccc;
+}
+#myTab li button {
+	text-transform: uppercase;
+	font-size: 13px;
+}
+.general_submit:hover{color: #fff;}
+.general_cancel_submit {
+	border: 1px solid #ea1414;
+	color: #ea1414;
+}
+.general_cancel_submit:hover {
+	background:#ea1414;
+	color: #fff;
+	border: 1px solid #ea1414;
+}
+.fancybox-image {
+	border: 2px solid #ccc;
+}
+.update_job_general input[type="radio"]:checked + label {
+	background-color:rgb(69, 174, 44);
+	color: white;
+	/* border-color: #ea1414; */
+}
+.btn.btn-danger.btn-sm.delete-image-btn {
+	position: relative;
+	padding: 0px 8px;
+	top: 22px;
+	left: -1px;
+}
+#final-punchlist .btn.disabled, .btn:disabled, fieldset:disabled .btn {
+	pointer-events: none;
+	opacity: 1;
+}
+.action-delete-punchlist {
+	border-color: #f8d7da;
+	color: #dc3545;
+}
+.btn.contactshrdedit {
+	background-color: #52b31c;
+	color: #fff;
+	padding: 3px 11px 4px 8px;
+	margin-right: 20px;
+}
+.jobs-table .modal th, .jobs-table .modal td{padding-left: 0px;font-size: 14px;
+	font-weight: normal;}
+.btn.btn-danger.btn-sm.punchlist_image_btn {
+	position: relative;
+	padding: 0px 8px;
+	top: 22px;
+	left: -1px;
+}
+.button.clear.clear_sign {
+	border: 1px solid #ccc;
+	padding: 1px 20px;
+	margin-top: 11px;
+}
+.approved-badge1 {
+	background-color: #49b030;
+	color:#fff;
+}
+.fc-day, .fc-day-top {
+    cursor: pointer;
+}
+.fc-day.highlighted {
+	background: #bbf7bb;
+}
+.highlighted {
+	background-color:#bbf7bb !important; /* Highlight color */
+	
+}
+.highlighted-event {
+	background-color: #bbf7bb !important; /* Highlight color */
+	padding: 15px;/* Optional border */
+}
+#editgeneral:hover {
+	cursor: pointer;
+}
+#content a{text-decoration:none;}
+
+/* Hide the original radio buttons */
+.radiobtn input[type="radio"] {
+    display: none;
+}
+.contact_modal .modal-content{
+	border: 0 !important;
+	border-radius: none !important;
+}
+.client-details p a {
+	word-wrap: break-word;
+}
+.contact_modal {
+	width: 400px;
+}
+/* Style the labels as buttons */
+.inputGroup label {
+    display: inline-block;
+    padding: 8px 14px;
+    font-size: 15px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    text-align: center;
+    background-color: #f8f9fa;
+    color: #007bff;
+    width: 100%;
+}
+
+/* Space between tab buttons */
+
+/* Default style when a label is selected (checked) */
+input[type="radio"]:checked + label {
+	background-color: #286fac;
+	color: white;
+	
+}
+
+/* Reset the other labels when one is selected */
+input[type="radio"]:not(:checked) + label {
+  background-color: #f8f9fa;
+  color: #000;
+  border-color:#ea1414;
+}
+
+/* Optional: Hover effect for better interactivity */
+.inputGroup label:hover {
+    background-color: #007bff;
+    color: white;
+}
+#client_profile span {
+	font-size: 14px;
+	color: #e33b3b;
+}
+.add-pic #add-pic {
+	left: 0;
+	position: absolute;
+	top: 0;
+	visibility: hidden;
+	width: 100%;
+}
+.add-pic label{
+	cursor: pointer;
+	margin: 0;
+}
+.add-pic span {
+	color: var(--main-color-1);
+	display: block;
+	font-family: SF-Pro-Medium;
+	font-size: 16px;
+	margin: 28px 0;
+	text-decoration: underline;
+}
+.add-pic img {
+	background-color: #EDECEC;
+	border: 1px solid #000;
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+}
+.add-pic {
+	text-align: center;
+}
+#detailsModalLabel span {
+	color: red;
+}
+.alert-danger ul{
+	margin:0 !important;
+}
+.alert-danger li{
+	list-style:none;
+}
+
+/* Responsive: Adjusting the width for smaller screens */
+@media (max-width: 576px) {
+    .inputGroup label {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+

@@ -1,0 +1,108 @@
+.form-step {display: none;}
+.form-step-active {display: block;}
+.custom-select-wrapper {
+    position: relative;
+   
+}
+.copyright {
+	font-size: 13px;
+	color: #777;
+}
+/* Basic select styles */
+.custom-select {
+    appearance: none; /* Remove default styling (for modern browsers) */
+    -webkit-appearance: none; /* Safari and Chrome */
+    -moz-appearance: none; /* Firefox */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    color: #888;
+    cursor: pointer;
+}
+
+/* Arrow styles */
+.custom-select-wrapper::after {
+    content: "▼"; /* Unicode character for a downward arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 12px;
+    color: #333;
+}
+
+/* Style the options */
+.custom-select option {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+}
+
+/* Focus styles */
+.custom-select:focus {
+    outline: none;
+    border-color: #66afe9;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+}
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full height of the viewport */
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(40, 111, 172, 0.5),
+    rgba(73, 176, 48, 0.5)
+  ); /* Gradient with opacity */
+  pointer-events: none; /* Allow clicks to pass through the overlay */
+  z-index: 1;
+}
+.login-text-color {
+  color: rgba(3, 64, 120, 1);
+}
+.login-form-container {
+  color: rgba(73, 80, 87, 1);
+}
+.register-form-container {
+  color: rgba(73, 80, 87, 1);
+  width:56%;
+}
+input::placeholder {
+    color: #888; /* Text color for input fields */
+    font-size: 14px; /* Font size for input fields */
+}
+.font-size-14 {
+  font-size: 14px;
+}
+.btn-style {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+  background-color: rgba(40, 111, 172, 1);
+}
+.text-sm {
+  font-size: 14px;
+  font-weight: bold;
+}
+/* Header CSS */
